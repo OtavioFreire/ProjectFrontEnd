@@ -1,13 +1,10 @@
-class Login{
-    constructor(login,password){
-        this.login = login;
-        this.password = password;
-    }
+function AbrirPaginaCadastro(){
+    window.location.href = "signup.html";
 }
 
 function fazerLogin() {
-    var inputLogin = document.getElementById("login").value;
-    var inputPassword = document.getElementById("pass").value;
+    let inputLogin = document.getElementById("login").value;
+    let inputPassword = document.getElementById("pass").value;
     
     if(inputLogin.length > 0 && inputPassword.length > 0){
         alert("Sucess!" )

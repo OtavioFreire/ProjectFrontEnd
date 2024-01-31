@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/signup.css">
-        <script src="../JavaScript/script.js"></script>
+        <script src="../JavaScript/signup.js"></script>
         <title>Signup</title>
     </head>
     <body>
@@ -13,32 +13,27 @@
             <div class="form_grupo">
                 <div class="form_login">
                     <p>
-                    <h1>
-                    Casdastrar novo usuário!
-                    </h1>
+                        <h1>Casdastrar novo usuário!</h1>
                     </p>
                     <div>
-                        <!--<label for="cadastrar" class="labelCadastrar">Nome:</label>-->
                         <input type="text" name="Cadastrar" placeholder = "Nome" class="input_cadastrar" id="cadastrar" required>
                     </div>
                     <br>
                     <div>
-                        <!--<label for="criarSenha" class="labelCriarSenha">Senha:</label>-->
                         <input type="password" name="password" placeholder = "Senha" class="form_input_pass" id="pass" minlength="20" required>
                     </div>
                      <br>
                     <div>
-                        <!--<label for="criarSenha" class="labelCriarSenha">Confirmar Senha:</label>-->
-                        <input type="password" name="password" placeholder = "Confirmar Senha" class="form_input_pass" id="pass" minlength="20" required>
+                        <input type="password" name="password" placeholder = "Confirmar Senha" class="form_input_pass_confirm" id="pass_confirm" minlength="20" required>
                     </div>
                     <br>
                     <div>
-                        <button type="submit" value="Sign in" onclick="fazerLogin()">Cadastrar</button>
+                        <button type="submit" value="Sign in" onclick="ValidarCamposCadastro()">Cadastrar</button>
                     </div> 
-                    <!-- <br>
+                    <br>
                     <p>
-                        <button href="../html/signin.html" class="RetornaPaginaLogin">Voltar para tela de login:</button>
-                    </p> -->
+                        <button type="submit" value="returnHomePage"  onclick="RetornarPaginainicial()" >Home</button>
+                    </p>
                 </div>
             </div>
         </div>
